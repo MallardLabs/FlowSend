@@ -1,0 +1,19 @@
+{
+  "name": "flowsend",
+  "version": "1.0.0",
+  "description": "A Bulk Payment For DRIP",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "author": "Mallardlabs",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "better-sqlite3": "^11.9.1",
+    "csv-parser": "^3.2.0",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7"
+  }
+}
