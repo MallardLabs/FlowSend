@@ -205,9 +205,9 @@ class EmbedMessage {
     const content = data
       .map(
         (entry) =>
-          `<@${entry.userId}> - ${entry.amount}\n_Note_: ${
-            entry.note || ""
-          }\n\n`
+          `<@${entry.userId}> - ${entry.amount} **${
+            this.POINT_NAME
+          }**\n_Note_: ${entry.note || ""}\n\n`
       )
       .join("\n");
     const embed = new EmbedBuilder()
